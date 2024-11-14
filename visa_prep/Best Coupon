@@ -1,0 +1,5 @@
+x=int(input())
+y=x-(0.10)*x
+k=x-100
+z=min(y,k)
+print(int(z))
