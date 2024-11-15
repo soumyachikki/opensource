@@ -1,0 +1,10 @@
+x=int(input())
+y=str(x)
+s=0
+for d in y:
+    s+=int(d)
+if s%2==0:
+    print("Vignesh")
+else:
+    print("Charan")
+    
