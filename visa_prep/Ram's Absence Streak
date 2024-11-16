@@ -1,0 +1,11 @@
+n=int(input())
+arr=list(map(int,input().split()))
+cs=0
+ms=0
+for i in range(n):
+    if arr[i]==0:
+        cs+=1
+        ms=max(cs,ms)
+    else:
+        cs=0
+print(ms)
