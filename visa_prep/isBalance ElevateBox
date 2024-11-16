@@ -1,0 +1,6 @@
+n=int(input())
+arr=list(map(int,input().split()))
+for i in range(n):
+    ls=sum(arr[:i])
+    rs=sum(arr[i+1:])
+    print(abs(ls-rs),end=" ")
