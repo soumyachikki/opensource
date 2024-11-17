@@ -1,0 +1,6 @@
+from collections import Counter
+n=int(input())
+a=list(map(int,input().split()))
+f=Counter(a)
+b=sorted(a,key=lambda i:(f[i],i))
+print(*b)
