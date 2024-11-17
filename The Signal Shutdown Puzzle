@@ -1,0 +1,17 @@
+n, m = map(int, input().split())
+grid = []
+for _ in range(n):
+    grid.append(list(map(int, input().split())))
+rowsmark = set()
+colsmark = set()
+for i in range(n):
+    for j in range(m):
+        if grid[i][j] == 0:
+            rowsmark.add(i)
+            colsmark.add(j)
+for i in range(n):
+    for j in range(m):
+        if i in rowsmark or j in colsmark:
+            grid[i][j] = 0
+for row in grid:
+    print(" ".join(map(str, row)))
