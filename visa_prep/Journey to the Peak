@@ -1,0 +1,8 @@
+n=int(input())
+arr=list(map(int,input().split()))
+cs=0
+ma=0
+for i in range(n):
+    cs+=arr[i]
+    ma=max(ma,cs)
+print(ma)
