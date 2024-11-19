@@ -1,0 +1,13 @@
+
+def missingNumbers(arr, brr):
+    fa={}
+    ba={}
+    ms=[]
+    for num in arr:
+        fa[num]=fa.get(num,0)+1
+    for num in brr:
+        ba[num]=ba.get(num,0)+1
+    for num in ba:
+        if num not in fa or fa[num]<ba[num]:
+            ms.append(num)
+    return sorted(ms)
