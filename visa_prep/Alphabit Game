@@ -1,0 +1,10 @@
+s=input()
+v="aeiouAEIOU"
+vo=0
+co=0
+for c in s:
+    if c in v:
+        vo+=1
+    elif c.isalpha():
+        co+=1
+print(f"{vo},{co}")
